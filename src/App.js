@@ -9,7 +9,7 @@ import MenuSection from "./components/MenuSection/MenuSection";
 import PhotoSection from "./components/PhotoSection/PhotoSection";
 import stl from "./App.module.css";
 import moment from "moment/moment";
-import { API_KEY } from "./ApiKey";
+const API_KEY = "3LfhipCC76GEd5UaL7ka33i1iSRbtfkpmGv5D0JL";
 
 const App = () => {
   const [rover, setRover] = useState("");
