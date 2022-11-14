@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.top_container {
+  background-image: url("../src/assets/background.jpg");
+  height: 100vh;
+  background-size: cover;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.favContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.selectFav {
+  background-color: rgb(133, 54, 1);
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin-left: 40px;
+  color: rgb(252, 236, 212);
+}
+
+.addButton {
+  background-color: rgb(165, 25, 0);
+  font-size: 22px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin-right: 45px;
+  color: rgb(252, 236, 212);
+}
+
+.addButton:hover {
+  cursor: pointer;
+  background-color: rgb(87, 13, 0);
+}
+
+.bottom_container {
+  background-color: rgb(78, 58, 45);
+  align-items: center;
+  justify-content: center;
+}
+
+.noPhotos {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding: 50px 15px 15px 15px;
+  background-color: rgb(78, 58, 45);
+}
+
+.button {
+  background-color: rgb(165, 25, 0);
+  outline: none;
+  border: none;
+  color: rgb(228, 193, 140);
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(87, 13, 0);
+}
+
+[tabindex] {
+  outline: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .top_container {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .favContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selectFav {
+    margin: 0;
+    width: 250px;
+    height: 50px;
+  }
+
+  .optionFav {
+    font-size: 12px;
+  }
+
+  .addButton {
+    margin: 10px 0 0 0;
+    width: 250px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .favContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .selectFav {
+    margin: 0;
+    width: 250px;
+    height: 50px;
+  }
+
+  .optionFav {
+    font-size: 8.4px;
+  }
+
+  .addButton {
+    margin: 10px 0 0 0;
+    width: 250px;
+    height: 60px;
+  }
+}
