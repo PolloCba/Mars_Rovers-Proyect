@@ -9,9 +9,9 @@ import MenuSection from "./components/MenuSection/MenuSection";
 import PhotoSection from "./components/PhotoSection/PhotoSection";
 import stl from "./App.module.css";
 import moment from "moment/moment";
-const API_KEY = "3LfhipCC76GEd5UaL7ka33i1iSRbtfkpmGv5D0JL";
 
 const App = () => {
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const [rover, setRover] = useState("");
   const [camera, setCamera] = useState("");
   const [sol, setSol] = useState(null);
